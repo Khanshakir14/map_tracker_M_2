@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Route Tracker</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h1>Advanced Route Tracker</h1>
+            <div id="inputs">
+                <input type="text" id="source" placeholder="Enter source location">
+                <input type="text" id="destination" placeholder="Enter destination location">
+                <button id="startTracking">Start Tracking</button>
+                <button id="showAlternate">Show Alternate Route</button>
+            </div>
+            <div id="routeInfo">
+                <h2>Route Information</h2>
+                <p>Distance: <span id="distance"></span></p>
+                <p>Duration: <span id="duration"></span></p>
+                <p>Traffic: <span id="traffic"></span></p>
+            </div>
+            <div id="weatherInfo">
+                <h2>Weather Information</h2>
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Conditions: <span id="conditions"></span></p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuwRNFoo9TF0au7vGd_pwK_Up1srvkocM&libraries=places"></script>
+    <script src="map.js"></script>
+</body>
+</html>
